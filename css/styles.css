@@ -127,3 +127,37 @@ body {
     transform: rotate(-25deg);
 
 }
+.abutton{
+    position: absolute;
+    top: 16.5em;
+    left: 13.5em;
+    display: block;
+    width: 2.5em;
+    height: 2.5em;
+    border: 1px solid #310c2b;
+    border-radius: 50%;
+    background: #9d2fa2;
+    box-shadow: 0 0 5px #d3cfcc, 
+    -1px 1px 1px rgba(95, 93, 93, 0.99), 
+    inset 0 1px 2px #cccac7;
+}
+.bbutton{
+    position: absolute;
+    top: 18.5em;
+    left: 10.5em;
+    display: block;
+    width: 2.5em;
+    height: 2.5em;
+    border: 1px solid #310c2b;
+    border-radius: 50%;
+    background: #9d2fa2;
+    box-shadow: 0 0 5px #d3cfcc, 
+    -1px 1px 1px rgba(95, 93, 93, 0.99), 
+    inset 0 1px 2px #cccac7;
+}
+
+
+
+
+
+
