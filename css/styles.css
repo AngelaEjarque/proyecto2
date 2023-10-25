@@ -97,11 +97,11 @@ body {
 
 .st{
     position: absolute;
-    top: 23em;
+    top: 22.5em;
     left: 7em;
     display: flex;
     width: 3em;
-    height: 0.5em;
+    height: 0.8em;
     border: 1px solid #4e4e4e;
     border-radius: 30%;
     background: #6c6c6c;
@@ -111,13 +111,14 @@ body {
     transform: rotate(-25deg);
 
 }
+
 .sl{
     position: absolute;
-    top: 23em;
+    top: 22.5em;
     left: 3.5em;
     display: flex;
     width: 3em;
-    height: 0.5em;
+    height: 0.8em;
     border: 1px solid #4e4e4e;
     border-radius: 30%;
     background: #6c6c6c;
@@ -127,6 +128,7 @@ body {
     transform: rotate(-25deg);
 
 }
+.st p, .sl p {font-size: 0.7em; position: absolute; top:0.5em }
 .abutton{
     position: absolute;
     top: 16.5em;
@@ -140,6 +142,10 @@ body {
     box-shadow: 0 0 5px #d3cfcc, 
     -1px 1px 1px rgba(95, 93, 93, 0.99), 
     inset 0 1px 2px #cccac7;
+}
+.abutton p{position:absolute;
+    top:1.5em;
+    right:0.5em;
 }
 .bbutton{
     position: absolute;
@@ -155,12 +161,16 @@ body {
     -1px 1px 1px rgba(95, 93, 93, 0.99), 
     inset 0 1px 2px #cccac7;
 }
+.bbutton p{position:absolute;
+    top:1.5em;
+    right:0.5em;
+}
 
 .l-1 {
     position: absolute;
-    top: 11px;
+    top: 0.7em;
     width: 18em;
-    height: 3px;
+    height: 0.2em;
     border: none;
     border-radius:  50px;
     background-image: -webkit-linear-gradient( #87908D,#A9B2AF  90%);
@@ -169,10 +179,10 @@ body {
 }
 
 .l-2 {  position: absolute;  
-    top: -8px;  
-    left: 20px;  
-    width: 3px;    
-    height: 19px;
+    top: -0.5em;  
+    left: 1.5em;  
+    width: 0.2em;    
+    height: 1.2em;
     border: none;
     border-radius: 5px 5px 0 0px;
     background-image: -webkit-linear-gradient( #A9B2AF,#87908D 90%);   
@@ -181,10 +191,10 @@ body {
 }
 
 .l-3 {  position: absolute;  
-    top: -8px;  
-    right: 20px;  
-    width: 3px;    
-    height: 19px;
+    top: -0.5em;  
+    right: 1.5em;  
+    width: 0.2em;    
+    height: 1.2em;
     border: none;
     border-radius: 5px 5px 0 0px;
     background-image: -webkit-linear-gradient( #A9B2AF,#87908D 90%);   
