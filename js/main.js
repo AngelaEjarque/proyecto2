@@ -4,39 +4,42 @@ document.addEventListener('DOMContentLoaded', function() {
     var A = document.getElementById('A');
     var B = document.getElementById('B');
     var screenElement = document.querySelector('.screen');
+    var diodo = document.getElementById('diodo');
 
-    // Función que se ejecuta cuando se hace clic en el botón st
+    var powerOn = false;
+
     stButton.addEventListener('click', function() {
-        if (screenElement.style.backgroundImage !== 'none') {
+        if (powerOn) {
             screenElement.style.backgroundImage = 'none';
+            diodo.style.backgroundColor = 'transparent';
         } else {
-            screenElement.style.backgroundImage = 'url(/img/img1.jpg)'; 
-            screenElement.style.backgroundSize = 'cover'; 
+            screenElement.style.backgroundImage = 'url(/img/img1.jpg)';
+            screenElement.style.backgroundSize = 'cover';
+            diodo.style.backgroundColor = 'yellow';
         }
+        powerOn = !powerOn; // Cambiamos el estado del interruptor
     });
 
     slButton.addEventListener('click', function() {
-        if(screenElement.style.backgroundImage !='none') {
-            screenElement.style.backgroundImage = 'url(/img/img1.jpg)'; 
+        if (powerOn) {
+            screenElement.style.backgroundImage = 'url(/img/img1.jpg)';
             screenElement.style.backgroundSize = 'cover';
         }
     });
 
     A.addEventListener('click', function() {
-        if (screenElement.style.backgroundImage = 'url(/img/img1.jpg)') {
+        if (powerOn) {
             screenElement.style.backgroundImage = 'url(/img/img2.jpg)';
-            screenElement.style.backgroundSize = 'cover'; 
+            screenElement.style.backgroundSize = 'cover';
         }
-    })
+    });
 
-    
     B.addEventListener('click', function() {
-        if (screenElement.style.backgroundImage !== 'none') {
+        if (powerOn) {
             screenElement.style.backgroundImage = 'url(/img/img3.jpg)';
-            screenElement.style.backgroundSize = 'cover'; 
+            screenElement.style.backgroundSize = 'cover';
         }
-    })
-
+    });
 });
 
 

@@ -78,22 +78,23 @@ body {
     inset 1px -1px black;
 }
 
-.diod {
+.diodo {
     position: absolute;
     top: 6em;
     left: 2.5em;
     display: block;
     width: 9px;
     height: 9px;
-    border: 1px solid #AC774D;
+    border: 1px solid #ffffff;
     border-radius: 50%;
-    background: #E4B443;
-    box-shadow: 0 0 5px #AC774D, 
-    -1px 1px 1px rgba(83, 53, 41, 0.99), 
-    inset 0 1px 2px #FCB251;
+    background: #a1a1a1;
+    box-shadow: 0 0 5px #646464, 
+    -1px 1px 1px rgba(54, 54, 54, 0.99), 
+    inset 0 1px 2px #808080;
 
     
 }
+
 
 .st{
     position: absolute;
