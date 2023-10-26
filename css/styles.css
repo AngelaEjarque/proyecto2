@@ -1,5 +1,6 @@
 body { 
     display:flex;
+    align-items: center;
     background-color: rgb(166, 244, 244); 
     align-items: center;
     padding-top: 2em;

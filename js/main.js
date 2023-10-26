@@ -3,6 +3,10 @@ document.addEventListener('DOMContentLoaded', function() {
     var slButton = document.getElementById('slbutton');
     var A = document.getElementById('A');
     var B = document.getElementById('B');
+    var upButton = document.querySelector('.up');
+    var downButton = document.querySelector('.down');
+    var leftButton = document.querySelector('.left');
+    var rightButton = document.querySelector('.right');
     var screenElement = document.querySelector('.screen');
     var diodo = document.getElementById('diodo');
     var audio = new Audio('/audio/song.mp3');
@@ -40,6 +44,34 @@ document.addEventListener('DOMContentLoaded', function() {
     B.addEventListener('click', function() {
         if (powerOn) {
             screenElement.style.backgroundImage = 'url(/img/img3.jpg)';
+            screenElement.style.backgroundSize = 'cover';
+        }
+    });
+
+    upButton.addEventListener('click', function() {
+        if (powerOn) {
+            screenElement.style.backgroundImage = 'url(/img/img4.jpg)';
+            screenElement.style.backgroundSize = 'cover';
+        }
+    });
+
+    downButton.addEventListener('click', function() {
+        if (powerOn) {
+            screenElement.style.backgroundImage = 'url(/img/img5.jpg)';
+            screenElement.style.backgroundSize = 'cover';
+        }
+    });
+
+    leftButton.addEventListener('click', function() {
+        if (powerOn) {
+            screenElement.style.backgroundImage = 'url(/img/img6.jpg)';
+            screenElement.style.backgroundSize = 'cover';
+        }
+    });
+
+    rightButton.addEventListener('click', function() {
+        if (powerOn) {
+            screenElement.style.backgroundImage = 'url(/img/img7.jpg)';
             screenElement.style.backgroundSize = 'cover';
         }
     });
