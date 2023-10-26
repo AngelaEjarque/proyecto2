@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var B = document.getElementById('B');
     var screenElement = document.querySelector('.screen');
     var diodo = document.getElementById('diodo');
+    var audio = new Audio('/audio/song.mp3');
 
     var powerOn = false;
 
@@ -12,10 +13,12 @@ document.addEventListener('DOMContentLoaded', function() {
         if (powerOn) {
             screenElement.style.backgroundImage = 'none';
             diodo.style.backgroundColor = 'transparent';
+            audio.pause(); // Pausa la canción cuando se apaga
         } else {
             screenElement.style.backgroundImage = 'url(/img/img1.jpg)';
             screenElement.style.backgroundSize = 'cover';
             diodo.style.backgroundColor = 'yellow';
+            audio.play(); // Reproduce la canción cuando se enciende
         }
         powerOn = !powerOn; // Cambiamos el estado del interruptor
     });
