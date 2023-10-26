@@ -1,9 +1,21 @@
-# Proyecto 2
-> Crearemos una simulación de game boy de tal manera que se puedan mostrar 3 imágenes si pulsamos en los botones
-# Crear base
-> Establecemos los valores del div clase "gameboy" que usaremos para la base incorportando  "box-shadow" para darle sombreado <br>
-> Dentro incluimos dos divs que compondrán la pantalla y el panel que lo rodea <br>
-# Creamos pantalla y sombras desde CSS
-# Incluimos JS 
-> Utilizaremos la función IF a través del adEventListener "click" para que cuando toquemos el botón Start/OFF se encienda o apague. 
-> Misma operación para los botones A y B, que mostrarán diferentes imágenes si los pulsamos después de START. 
+# Proyecto 2 - Game boy simulation
+
+> Crearemos una simulación de game boy de tal manera que se puedan mostrar diversas imágenes.
+
+# Manejo
+> Para que la game boy se encienda, debemos hacer click en el botón "start" y comenzará a sonar una música, así como se encenderá el led en amarillo y mostrará la pantalla inicial de Nintendo. <br>
+> Para mostrar imágenes se pueden pulsar cualquiera de los botones siempre y cuando hayamos pulsado antes "start". <br>
+> El botón reset nos llevará a la imagen inicial de Nintendo. 
+
+# Desarrollo
+> Establecemos los elementos a través de divs, siendo el div clase "gameboy" aquel que usaremos para la base incorportando  "box-shadow" para darle sombreado <br>
+> Incluimos en nuestro archivo de CSS todos los estilos necesarios a traves de cada clase. Priorizamos el uso de flex por su versatilidad y el posicionamiento absoluto. Todas las unidades de medida generalmente serán relativas "em" excepto en casos concretos que usaremos px <br>
+> Incluimos más divs, que compondrán la pantalla, el panel que lo rodea, el altavoz y los respectivos botones <br>
+> En JS definimos las variables con sus respectivos id y utilizamos addEventListener para todos los botones que queremos accionar. <br> 
+> También incluimos "powerOn" para que reconozca cuando está encendida o apagada la game boy dependiendo si hemos pulsado start o no (funcionando como un interruptor) para así bloquear los botones si está apagada<br>
+>Inluimos música a través de newAudio incluyendolo en la funcióm, para que suene solo si start está accionado.
+# Futuras implementaciones
+> Incluir movimiento en los botones
+
+# Copyright y licencia
+> Uso libre
