@@ -4,7 +4,10 @@
 
 # Manejo
 > Para que la game boy se encienda, debemos hacer click en el botón "start" y comenzará a sonar una música, así como se encenderá el led en amarillo y mostrará la pantalla inicial de Nintendo. <br>
+![Captura de pantalla 2024-02-03 120642](https://github.com/AngelaEjarque/proyecto2/assets/147879332/7563bb42-fe49-4d53-9808-347b0d5d168c)
 > Para mostrar imágenes se pueden pulsar cualquiera de los botones siempre y cuando hayamos pulsado antes "start". <br>
+![Captura de pantalla 2024-02-03 120618](https://github.com/AngelaEjarque/proyecto2/assets/147879332/e4187e3d-4658-468d-a40c-406d3155462c)
+
 > El botón reset nos llevará a la imagen inicial de Nintendo. 
 
 # Desarrollo
